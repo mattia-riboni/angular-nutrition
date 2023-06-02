@@ -1,0 +1,87 @@
+.container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.card{
+  display: flex;
+  min-width: 400px;
+  width: 40vw;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+  -webkit-box-shadow: 2px 4px 15px 0px rgba(0,0,0,0.88);
+  box-shadow: 2px 4px 15px 0px rgba(0,0,0,0.88);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+
+.info { grid-area: 1 / 1 / 2 / 2; }
+.values { grid-area: 1 / 2 / 2 / 3; }
+
+.title{
+  font-size: larger;
+  font-weight: bold;
+}
+
+.value{
+  background-color: bisque;
+  margin-top: 1px;
+  border-radius: 10px;
+  padding-left: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.calories{
+  background-color: rgb(255, 174, 119);
+}
+
+.carbohydrates{
+  background-color: bisque;
+}
+
+.fat{
+  background-color: rgb(169, 246, 169);
+}
+
+.protein{
+  background-color: rgb(152, 255, 255);
+}
+
+.sugar{
+  background-color: rgb(255, 166, 166);
+}
+
+.img-container{
+  margin-top: 10px;
+  img{
+    width: 80px;
+    border-radius: 10px;
+    height: 80px;
+    object-fit: cover;
+  }
+}
+
+.more{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+ion-button{
+  --background: green;
+}

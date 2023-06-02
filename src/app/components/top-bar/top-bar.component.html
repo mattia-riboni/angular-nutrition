@@ -1,0 +1,10 @@
+<header>
+  <span class="top"><span>
+    <img class="apple" src="../../../assets/apple.png" >
+  </span><a routerLink="/fruits">
+  FRUIT VALUES</a></span>
+  <div class="search">
+    <ion-searchbar #fruit mode="ios" animated="true" placeholder="Search Your Fruit"></ion-searchbar>
+    <ion-button (click)="search(fruit.value)">Search</ion-button>
+  </div>
+</header>

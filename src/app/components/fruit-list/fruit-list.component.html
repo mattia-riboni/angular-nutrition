@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="card" *ngFor="let fruit of fruits, let i = index">
+    <div class="info">
+      <p class="title">{{fruit.name}}</p><br>
+      <p class="family">Family: {{fruit.family}}</p>
+      <div class="img-container">
+        <img src="{{fruitPhoto[i]}}">
+      </div>
+    </div>
+    <div class="values">
+      <div class="value calories"><p>Calories: {{fruit.nutritions.calories}} kCal</p></div>
+      <div class="value carbohydrates"><p>Carbohydrates: {{fruit.nutritions.carbohydrates}} g</p></div>
+      <div class="value fat"><p>Fat: {{fruit.nutritions.fat}} g</p></div>
+      <div class="value protein"><p>Proteins: {{fruit.nutritions.protein}} g</p></div>
+      <div class="value sugar"><p>Sugar: {{fruit.nutritions.sugar}} g</p></div>
+      <div class="more" (click)="goFruitDetail(fruit.name)"><ion-button size="small">MORE</ion-button></div>
+    </div>
+  </div>
+</div>

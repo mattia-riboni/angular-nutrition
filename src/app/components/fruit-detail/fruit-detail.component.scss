@@ -1,0 +1,89 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:100%;
+  background-position: center;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 40px;
+  color:white;
+  text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+}
+
+h3{
+  color:white;
+  text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+}
+
+.values{
+  margin-top: 20px;
+}
+
+.value{
+  background-color: bisque;
+  margin-top: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  padding-left: 5px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.calories{
+  background-color: rgb(255, 174, 119);
+}
+
+.carbohydrates{
+  background-color: bisque;
+}
+
+.fat{
+  background-color: rgb(169, 246, 169);
+}
+
+.protein{
+  background-color: rgb(152, 255, 255);
+}
+
+.sugar{
+  background-color: rgb(255, 166, 166);
+}
+
+.recipes{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe{
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  width: 40vw;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 15px 15px 15px 15px;
+  box-shadow: 2px 4px 15px 0px rgba(0,0,0,0.88);
+}
+
+.ingredients{
+  margin-top: 5px;
+}
+
+.instructions{
+  margin-top: 5px;
+}
