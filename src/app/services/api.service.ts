@@ -11,11 +11,18 @@ export class APIService {
     private http: HttpClient
   ) { }
 
-  headers: HttpHeaders = new HttpHeaders({
+  recipeHeaders: HttpHeaders = new HttpHeaders({
     'X-RapidAPI-Key': 'cd2f1cc58bmsh7767c620a9390ecp1582dbjsn93db1238ff7d',
 		'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
   });
-  requestOptions: object = {headers: this.headers};
+
+  fruitViceHeaders: HttpHeaders = new HttpHeaders({
+    'Access-Control-Allow-Origin': '*'
+  })
+
+  fruitViceRequestOptions: object = {headers: this.fruitViceHeaders}
+
+  recipeRequestOptions: object = {headers: this.recipeHeaders};
 
 
   getAllFruits(): Observable<Object>{
@@ -31,6 +38,6 @@ export class APIService {
   }
 
   getRecipe(fruit: string){
-    return this.http.get(`https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=${fruit}`, this.requestOptions)
+    return this.http.get(`https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe?query=${fruit}`, this.recipeRequestOptions)
   }
 }
