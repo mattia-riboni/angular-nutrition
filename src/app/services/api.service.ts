@@ -17,7 +17,9 @@ export class APIService {
   });
 
   fruitViceHeaders: HttpHeaders = new HttpHeaders({
-    'Access-Control-Allow-Origin': '*'
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Allow-Methods': 'GET'
   })
 
   fruitViceRequestOptions: object = {headers: this.fruitViceHeaders}
